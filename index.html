@@ -1324,7 +1324,7 @@ POLL_FIELDS.forEach(function(id){
               f.id==="Opponent" ? "Which opponent?" : "Which era?";
   block.innerHTML = '<h4>'+title+' <span class="you" id="you-'+id+'"></span></h4>';
   f.options.forEach(function(o){
-    var lbl = (o.short||o.label).replace(" · the trilogy, finished","").replace("· ","");
+    var lbl = (o.short||o.label).replace("· ","");
     var bar = document.createElement("div");
     bar.className="bar"; bar.dataset.v=o.v; bar.dataset.base=o.demand;
     bar.innerHTML =
