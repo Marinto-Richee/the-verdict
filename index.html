@@ -722,7 +722,7 @@ a{color:inherit}
     <div class="hr" data-hr style="margin-bottom:2.2rem"></div>
     <div class="tape fx-stagger" id="tape"></div>
     <p class="serif" style="font-style:italic;color:var(--muted);font-size:.92rem;margin-top:1.6rem;max-width:48ch">
-      &ldquo;The Man.&rdquo; NRL to the ring, a multiple-weight titlist, and a trilogy with Danny Green this country never stopped arguing about.
+      &ldquo;The Man.&rdquo; NRL to the ring, a multiple-weight titlist, and a two-fight feud with Danny Green this country never stopped arguing about.
     </p>
   </div>
 </section>
@@ -893,7 +893,7 @@ var FIELDS = [
     deck:"How heavy does the cover carry it? The silhouette scales with the division.",
     railKey:"Division",
     options:[
-      {v:"WELTER", label:"Welterweight", kg:"67kg", h:38, demand:21},
+      {v:"LMID", label:"Light-Middle", kg:"70kg", h:38, demand:21},
       {v:"MIDDLE", label:"Middleweight", kg:"73kg", h:50, demand:41},
       {v:"SUPER",  label:"Super-Mid",     kg:"76kg", h:62, demand:25},
       {v:"CRUISER",label:"Cruiserweight", kg:"90kg", h:78, demand:13}
@@ -964,7 +964,7 @@ var FIELDS = [
     deck:"Who do you summon across the ring? The cover's main event.",
     railKey:"Opponent",
     options:[
-      {v:"GREEN", label:"Danny Green · the trilogy, finished", demand:38},
+      {v:"GREEN", label:"Danny Green · the decider (they're 1–1)", short:"Danny Green", demand:38},
       {v:"SOUTHPAW", label:"A prime southpaw", demand:21},
       {v:"LEGEND", label:"An all-time legend", demand:23},
       {v:"SOLO", label:"No one — him, alone, on the wall", demand:18}
@@ -1025,10 +1025,10 @@ function setRim(hex){
    --------------------------------------------------------------------------- */
 var TAPE = [
   {n:4, suf:"×", lbl:"World titles, multiple weights"},
-  {n:3, suf:"", lbl:"Green trilogy bouts"},
-  {n:46, suf:"", lbl:"Career wins"},
-  {n:1, suf:"st", lbl:"NRL star to turn pro boxer"},
-  {n:11, suf:"yr", lbl:"Top-line career span"}
+  {n:2, suf:"", lbl:"Green bouts — split 1–1"},
+  {n:48, suf:"", lbl:"Career wins (48–11)"},
+  {n:2, suf:"", lbl:"codes conquered — NRL & world boxing"},
+  {n:21, suf:"yr", lbl:"Pro career, 2000–2021"}
 ];
 var tapeHost = document.getElementById("tape");
 TAPE.forEach(function(t){
